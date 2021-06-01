@@ -1,4 +1,15 @@
 /* ===========================General================================= */
+/* Custom fonts */
+@font-face {
+  font-family: MiddleEarth;
+  src: url(../assets/fonts/MiddleEarth.ttf);
+}
+
+@font-face {
+  font-family: SeratUltra;
+  src: url(../assets/fonts/SeratUltra.ttf);
+}
+
 /* Reset CSS */
 html,
 body,
@@ -138,4 +149,11 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+/* ===========================Header================================== */
+/* Logo */
+.logo__title {
+  font-family: MiddleEarth;
+  font-size: 2rem;
 }
