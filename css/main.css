@@ -151,6 +151,10 @@ table {
   border-spacing: 0;
 }
 
+.visually-hidden {
+  display: none;
+}
+
 /* ===========================Header================================== */
 /* Logo */
 .logo__title {
@@ -162,6 +166,41 @@ table {
 
 
 /* ===========================Aside=================================== */
-.menu-item__img {
-  max-width: 6.25rem;
+.aside__menu-item {
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  height: 7rem;
+  width: 7rem;
+}
+
+.frodo {
+  background: transparent url(../assets/icons/icon-frodo.svg);
+}
+
+.frodo:hover {
+  background: transparent url(../assets/icons/icon-frodo-hover.svg);
+}
+
+.gandalf {
+  background: transparent url(../assets/icons/icon-gandalf.svg);
+}
+
+.gandalf:hover {
+  background: transparent url(../assets/icons/icon-gandalf-hover.svg);
+}
+
+.legolas {
+  background: transparent url(../assets/icons/icon-legolas.svg);
+}
+
+.legolas:hover {
+  background: transparent url(../assets/icons/icon-legolas-hover.svg);
+}
+
+.galadriel {
+  background: transparent url(../assets/icons/icon-galadriel.svg);
+}
+
+.galadriel:hover {
+  background: transparent url(../assets/icons/icon-galadriel-hover.svg);
 }
