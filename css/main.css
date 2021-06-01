@@ -157,3 +157,11 @@ table {
   font-family: MiddleEarth;
   font-size: 2rem;
 }
+
+/* Navigation */
+
+
+/* ===========================Aside=================================== */
+.menu-item__img {
+  max-width: 6.25rem;
+}
