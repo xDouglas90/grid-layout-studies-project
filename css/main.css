@@ -173,7 +173,7 @@ table {
 /* ===========================Aside=================================== */
 .aside__menu-item {
   border: 1px solid transparent;
-  border-radius: 50%;
+  border-radius: 12%;
   height: 7rem;
   margin: 1rem;
   width: 7rem;
