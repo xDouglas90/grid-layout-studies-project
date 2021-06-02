@@ -211,7 +211,13 @@ table {
   height: 16rem;
   margin: 1rem;
   width: 14rem;
+  opacity: .6;
   transition: all ease-in-out .2s;
+}
+
+.ads__item:hover {
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, .2);
+  opacity: 1;
 }
 
 .adv-1 {
