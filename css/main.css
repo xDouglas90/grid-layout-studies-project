@@ -10,14 +10,15 @@
   src: url(../assets/fonts/SeratUltra.ttf);
 }
 
+.visually-hidden {
+  display: none;
+}
+
 /* Reset CSS */
 html,
 body,
 div,
 span,
-applet,
-object,
-iframe,
 h1,
 h2,
 h3,
@@ -26,34 +27,12 @@ h5,
 h6,
 p,
 blockquote,
-pre,
 a,
-abbr,
-acronym,
-address,
-big,
 cite,
-code,
-del,
-dfn,
 em,
 img,
-ins,
-kbd,
 q,
-s,
-samp,
-small,
-strike,
 strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
 dl,
 dt,
 dd,
@@ -63,39 +42,17 @@ li,
 fieldset,
 form,
 label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
 article,
 aside,
-canvas,
-details,
-embed,
 figure,
 figcaption,
 footer,
 header,
-hgroup,
-menu,
 nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+section {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
   font: inherit;
   vertical-align: baseline;
 }
@@ -151,8 +108,10 @@ table {
   border-spacing: 0;
 }
 
-.visually-hidden {
-  display: none;
+/* Global grid */
+.grid-structure {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 /* ===========================Header================================== */
@@ -170,7 +129,7 @@ table {
   font-size: 2rem;
 }
 
-/* ===========================Aside=================================== */
+/* ===========================Aside Complementary======================= */
 .aside__menu-item {
   border: 1px solid transparent;
   border-radius: 12%;
@@ -219,4 +178,24 @@ table {
 .galadriel:hover {
   background: url(../assets/icons/icon-galadriel-hover.svg);
   transform: scale(1.10);
+}
+
+/* ===========================Aside Ads================================== */
+.ads__item {
+  border: 1px solid transparent;
+  border-radius: 5%;
+  height: 16rem;
+  margin: 1rem;
+  width: 14rem;
+  transition: all ease-in-out .2s;
+}
+
+.adv-1 {
+  background: url(../assets/img/propaganda-1.jpg);
+  background-size: cover;
+}
+
+.adv-2 {
+  background: url(../assets/img/propaganda-2.jpg);
+  background-size: cover;
 }
