@@ -123,12 +123,6 @@ table {
   grid-area: content;
 }
 
-
-
-.footer {
-  grid-area: footer;
-}
-
 /* ===========================Header================================== */
 /* Header */
 .header {
@@ -154,6 +148,7 @@ table {
   font-family: 'Handlee', cursive;
   font-size: 1.115rem;
   text-shadow: 1px 1px 0px rgb(248, 248, 248), 2px 2px 0px rgba(0, 0, 0, .15);
+  text-transform: lowercase;
   margin-left: .3rem;
 }
 
@@ -167,11 +162,9 @@ table {
 
 .nav__list-item {
   border-bottom: 5px solid transparent;
-  font-family: 'Londrina Solid', cursive;
-  font-size: 1.8rem;
-  font-variant: small-caps;
+  font-family: 'Odibee Sans', cursive;
+  font-size: 1.7rem;
   letter-spacing: 1px;
-  text-transform: lowercase;
   text-shadow: 1px 1px 0px #fff;
   transition: all ease-in-out .2s;
 }
@@ -207,58 +200,59 @@ table {
 }
 
 .aside__menu-item {
+  background: #fff;
   border: 1px solid transparent;
   border-radius: 12%;
-  height: 7rem;
-  margin: 1rem;
-  width: 9rem;
-  transition: all ease-in-out .2s;
-}
-
-.aside__menu-item:hover {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2);
+  height: 7rem;
+  margin: 0 1rem 2rem 1rem;
+  transition: all ease-in-out .2s;
+  width: 9rem;
 }
 
 .frodo {
-  background: url(../assets/icons/icon-frodo.svg) no-repeat center;
+  background: white url(../assets/icons/icon-frodo.svg) no-repeat center;
 }
 
 .frodo:hover {
-  background: white url(../assets/icons/icon-frodo-hover.svg) no-repeat center;
+  background: url(../assets/icons/icon-frodo-hover.svg) no-repeat center;
   transform: scale(1.10);
 }
 
 .gandalf {
-  background: url(../assets/icons/icon-gandalf.svg) no-repeat center;
+  background: white url(../assets/icons/icon-gandalf.svg) no-repeat center;
 }
 
 .gandalf:hover {
-  background: white url(../assets/icons/icon-gandalf-hover.svg) no-repeat center;
+  background: url(../assets/icons/icon-gandalf-hover.svg) no-repeat center;
   transform: scale(1.10);
 }
 
 .legolas {
-  background: url(../assets/icons/icon-legolas.svg) no-repeat center;
+  background: white url(../assets/icons/icon-legolas.svg) no-repeat center;
 }
 
 .legolas:hover {
-  background: white url(../assets/icons/icon-legolas-hover.svg) no-repeat center;
+  background: url(../assets/icons/icon-legolas-hover.svg) no-repeat center;
   transform: scale(1.10);
 }
 
 .galadriel {
-  background: url(../assets/icons/icon-galadriel.svg) no-repeat center;
+  background: white url(../assets/icons/icon-galadriel.svg) no-repeat center;
 }
 
 .galadriel:hover {
-  background: white url(../assets/icons/icon-galadriel-hover.svg) no-repeat center;
+  background: url(../assets/icons/icon-galadriel-hover.svg) no-repeat center;
   transform: scale(1.10);
 }
 
 /* ===========================Aside Ads================================== */
 .ads {
+  display: grid;
   grid-area: ads;
+  align-content: start;
   justify-self: center;
+  gap: 3rem;
   background: #fafbfc;
   padding-top: 3rem;
 }
@@ -267,9 +261,9 @@ table {
   border: 1px solid transparent;
   border-radius: 5%;
   height: 16rem;
-  margin: 1rem;
+  margin: 0 1rem;
   width: 14rem;
-  opacity: .6;
+  opacity: .8;
   transition: all ease-in-out .2s;
 }
 
@@ -286,4 +280,34 @@ table {
 .adv-2 {
   background: url(../assets/img/propaganda-2.jpg);
   background-size: cover;
+}
+
+/* ===========================Footer===================================== */
+.footer {
+  display: grid;
+  background: linear-gradient(135deg, rgb(245, 211, 16), rgb(248, 217, 41), rgb(255, 227, 69));
+  grid-area: footer;
+  grid-template-rows: auto auto;
+  justify-content: center;
+}
+
+.footer__social {
+  display: flex;
+  font-size: 2rem;
+  justify-content: space-around;
+  margin: 1rem 0 1rem;
+  width: 23rem;
+}
+
+.footer__social a {
+  text-shadow: 2px 1px #fff;
+}
+
+.footer__social a:hover {
+  color: #fff;
+  text-shadow: 3px 2px 2px #000, 4px 3px 0px rgba(70, 70, 70, 0.1);
+}
+
+.copyright {
+  text-shadow: 1px 1px 0px rgb(248, 248, 248), 2px 2px 0px rgba(0, 0, 0, .15);
 }
