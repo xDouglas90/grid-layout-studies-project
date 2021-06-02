@@ -111,7 +111,31 @@ table {
 /* Global grid */
 .grid-structure {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: minmax(9rem, 1fr) 3fr 18.75rem;
+  grid-template-areas: "header header header"
+    "aside content ads"
+    "aside content ads"
+    "footer footer footer";
+}
+
+.header {
+  grid-area: header;
+}
+
+.aside {
+  grid-area: aside;
+}
+
+.content {
+  grid-area: content;
+}
+
+.ads {
+  grid-area: ads;
+}
+
+.footer {
+  grid-area: footer;
 }
 
 /* ===========================Header================================== */
