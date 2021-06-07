@@ -126,7 +126,7 @@
 }
 
 .nav__list-item:hover {
-  background: var(--primary-color);
+  background: var(--third-color);
   box-shadow: 3px 3px 15px 0 rgba(0, 0, 0, .1);
   transform: scale(1.03);
 }
