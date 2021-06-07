@@ -1,0 +1,13 @@
+/* ==========================Min Widths==================================== */
+
+
+/* ==========================Max Widths==================================== */
+@media screen and (max-width: 768px) {
+  .fs-menu__container {
+    flex-direction: column;
+  }
+
+  .fs-menu__title {
+    font-size: 1rem;
+  }
+}
