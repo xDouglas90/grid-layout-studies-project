@@ -119,6 +119,16 @@ table {
     "footer footer footer";
 }
 
+.aside-title {
+  background: whitesmoke;
+  font-size: 1.3rem;
+  font-variant: small-caps;
+  font-weight: 200;
+  letter-spacing: 1.5px;
+  text-align: center;
+  padding: 1rem;
+}
+
 /* ===========================Header================================== */
 /* Header */
 .header {
@@ -157,12 +167,14 @@ table {
 }
 
 .nav__list-item {
-  border-bottom: 5px solid transparent;
-  font-family: 'Odibee Sans', cursive;
+  background: rgba(250, 216, 27, .5);
+  border-radius: 10px;
+  font-family: 'Titillium Web', sans-serif;
   font-size: 1.7rem;
+  font-weight: 300;
   letter-spacing: 1px;
-  text-shadow: 1px 1px 0px #fff;
   transition: all ease-in-out .2s;
+  padding: .8rem;
 }
 
 .nav__list-item+.nav__list-item {
@@ -170,10 +182,9 @@ table {
 }
 
 .nav__list-item:hover {
-  border-bottom: 5px solid rgb(248, 248, 248);
-  color: rgb(238, 230, 230);
-  text-shadow: 1px 1px 0px #fff, 3px 3px 0px rgba(0, 0, 0, .1);
-  transform: scale(1.05);
+  background: rgba(250, 216, 27, 1);
+  box-shadow: 3px 3px 15px 0 rgba(0, 0, 0, .1);
+  transform: scale(1.03);
 }
 
 /* ===========================Aside Complementary======================= */
@@ -181,7 +192,7 @@ table {
   grid-area: aside;
   justify-self: center;
   background: #fafbfc;
-  padding-top: 3rem;
+  padding-top: 1rem;
 }
 
 .aside__menu-item {
@@ -189,8 +200,9 @@ table {
   border: 1px solid transparent;
   border-radius: 12%;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2);
+  gap: 3rem;
   height: 7rem;
-  margin: 0 1rem 2rem 1rem;
+  margin: 3rem 1rem 2rem 1rem;
   transition: all ease-in-out .2s;
   width: 9rem;
 }
@@ -245,7 +257,7 @@ table {
 .char__title {
   color: rgb(250, 224, 76);
   font-family: SeratUltra;
-  font-size: 4rem;
+  font-size: 3rem;
   letter-spacing: 1px;
   margin-bottom: .8rem;
   text-shadow: 2px 1px 0px rgba(0, 0, 0, .4), 4px 3px 0px rgba(0, 0, 0, .15);
@@ -387,7 +399,7 @@ table {
   justify-self: center;
   gap: 3rem;
   background: #fafbfc;
-  padding-top: 3rem;
+  padding-top: 1rem;
 }
 
 .ads__item {
