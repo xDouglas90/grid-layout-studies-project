@@ -1,0 +1,10 @@
+/* Custom fonts */
+@font-face {
+  font-family: MiddleEarth;
+  src: url(../assets/fonts/MiddleEarth.ttf);
+}
+
+@font-face {
+  font-family: SeratUltra;
+  src: url(../assets/fonts/SeratUltra.ttf);
+}
