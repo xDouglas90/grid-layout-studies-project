@@ -26,10 +26,15 @@
     grid-template-columns: auto;
   }
 
+  .logo__sub-title {
+    margin-bottom: 1rem;
+  }
+
   .aside,
   .ads {
     overflow-x: auto;
     padding: 0;
+    width: 100vw;
   }
 
   .aside-menu,
