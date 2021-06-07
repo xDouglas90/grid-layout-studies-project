@@ -2,12 +2,60 @@
 
 
 /* ==========================Max Widths==================================== */
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .fs-menu__container {
     flex-direction: column;
   }
 
   .fs-menu__title {
     font-size: 1rem;
+  }
+
+  .grid-structure {
+    grid-template-columns: auto;
+    grid-template-areas:
+      "header"
+      "aside"
+      "content"
+      "ads"
+      "footer" !important;
+  }
+
+  .header,
+  .content {
+    grid-template-columns: auto;
+  }
+
+  .aside,
+  .ads {
+    overflow-x: auto;
+    padding: 0;
+  }
+
+  .aside-menu,
+  .ads {
+    display: flex;
+  }
+
+  .aside__menu-item {
+    flex: 1 0 3.75rem;
+  }
+
+  .ads {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .grid-structure {
+    grid-template-areas:
+      "header header header"
+      "aside content content"
+      "aside ads ads"
+      "footer footer footer";
+  }
+
+  .ads {
+    margin-bottom: 2rem;
   }
 }
