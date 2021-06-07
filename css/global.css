@@ -93,10 +93,6 @@ table {
   border-spacing: 0;
 }
 
-.visually-hidden {
-  display: none;
-}
-
 /* Global grid */
 .grid-structure {
   display: grid;
