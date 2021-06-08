@@ -155,36 +155,40 @@
   background: white url(../assets/icons/icon-frodo.svg) no-repeat center;
 }
 
-.frodo:hover {
-  background: url(../assets/icons/icon-frodo-hover.svg) no-repeat center;
-  transform: scale(1.10);
-}
-
 .gandalf {
   background: white url(../assets/icons/icon-gandalf.svg) no-repeat center;
-}
-
-.gandalf:hover {
-  background: url(../assets/icons/icon-gandalf-hover.svg) no-repeat center;
-  transform: scale(1.10);
 }
 
 .legolas {
   background: white url(../assets/icons/icon-legolas.svg) no-repeat center;
 }
 
-.legolas:hover {
-  background: url(../assets/icons/icon-legolas-hover.svg) no-repeat center;
-  transform: scale(1.10);
-}
-
 .galadriel {
   background: white url(../assets/icons/icon-galadriel.svg) no-repeat center;
 }
 
+.frodo:hover,
+.gandalf:hover,
+.legolas:hover,
+.galadriel:hover {
+  border: 1px solid var(--secondary-color);
+  transform: scale(1.10);
+}
+
+.frodo:hover {
+  background: url(../assets/icons/icon-frodo-hover.svg) no-repeat center;
+}
+
+.gandalf:hover {
+  background: url(../assets/icons/icon-gandalf-hover.svg) no-repeat center;
+}
+
+.legolas:hover {
+  background: url(../assets/icons/icon-legolas-hover.svg) no-repeat center;
+}
+
 .galadriel:hover {
   background: url(../assets/icons/icon-galadriel-hover.svg) no-repeat center;
-  transform: scale(1.10);
 }
 
 /* ===========================Main Content================================ */
