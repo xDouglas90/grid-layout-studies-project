@@ -1,5 +1,12 @@
-/* ==========================Min Widths==================================== */
+@keyframes hand-scrolling {
+  from {
+    transform: translateX(-2rem);
+  }
 
+  to {
+    transform: translateX(2rem);
+  }
+}
 
 /* ==========================Max Widths==================================== */
 @media (max-width: 768px) {
@@ -34,6 +41,7 @@
   .ads {
     overflow-x: auto;
     padding: 0;
+    position: relative;
     width: 100vw;
   }
 
@@ -44,6 +52,16 @@
 
   .aside__menu-item {
     flex: 1 0 3.75rem;
+  }
+
+  .aside::after,
+  .ads::after {
+    animation: hand-scrolling 3s ease-in-out infinite alternate;
+    content: url(../assets/icons/scroll.png);
+    position: absolute;
+    opacity: .4;
+    top: 5px;
+    right: 2rem;
   }
 
   .ads {
