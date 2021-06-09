@@ -16,3 +16,6 @@ Feito apenas com *HTML5* e *CSS3*.
 
 - Responsividade também, em **Grid Layout**, apenas os *asides* com `display: flex` para poder fazer o *scroll* em seus itens:
 <img alt="Menu fullscreen inicial" title="Menu fullscreen inicial" src="https://media.giphy.com/media/HQTMA9TdUXp6T14JwT/giphy-downsized.gif" />
+
+- Add icone de *hand-scrolling* no `@media (max-width: 76px)` com `animation`, para informar aos usuários visualmente que o menu complementar e os anúncios podem ser rolados horizontalmente:
+<img alt="Icone animado" title="Icone Animado" src="https://media.giphy.com/media/dqIkzDeBXmQA2IqcJC/giphy.gif" />
