@@ -9,12 +9,28 @@
   src: url(../assets/fonts/SeratUltra.ttf);
 }
 
+// Custom Properties
 :root {
   --primary-color: rgb(197, 168, 0);
   --secondary-color: rgb(241, 207, 14);
   --third-color: rgb(255, 230, 86);
   --background-color: #fafbfc;
   --linear-color: linear-gradient(135deg, var(--primary-color), var(--secondary-color), var(--third-color));
+}
+
+// General
+.aside-title {
+  background: whitesmoke;
+  font-size: 1.3rem;
+  font-variant: small-caps;
+  font-weight: 200;
+  letter-spacing: 1.5px;
+  text-align: center;
+  padding: 1rem;
+}
+
+.visually-hidden {
+  display: none;
 }
 
 /* Reset CSS */
