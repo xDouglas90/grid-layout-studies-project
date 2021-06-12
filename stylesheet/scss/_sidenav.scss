@@ -1,0 +1,49 @@
+.aside {
+  grid-area: aside;
+  justify-self: center;
+  background: var(--background-color);
+  padding-top: 1rem;
+  .aside__menu-item {
+    background: #fff;
+    border: 1px solid transparent;
+    border-radius: 12%;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    gap: 3rem;
+    height: 7rem;
+    margin: 3rem 1rem 2rem 1rem;
+    transition: all ease-in-out 0.2s;
+    width: 9rem;
+  }
+  .frodo {
+    background: white url(../../assets/icons/icon-frodo.svg) no-repeat center;
+    &:hover {
+      border: 1px solid var(--secondary-color);
+      transform: scale(1.1);
+      background: url(../../assets/icons/icon-frodo-hover.svg) no-repeat center;
+    }
+  }
+  .gandalf {
+    background: white url(../../assets/icons/icon-gandalf.svg) no-repeat center;
+    &:hover {
+      border: 1px solid var(--secondary-color);
+      transform: scale(1.1);
+      background: url(../../assets/icons/icon-gandalf-hover.svg) no-repeat center;
+    }
+  }
+  .legolas {
+    background: white url(../../assets/icons/icon-legolas.svg) no-repeat center;
+    &:hover {
+      border: 1px solid var(--secondary-color);
+      transform: scale(1.1);
+      background: url(../../assets/icons/icon-legolas-hover.svg) no-repeat center;
+    }
+  }
+  .galadriel {
+    background: white url(../../assets/icons/icon-galadriel.svg) no-repeat center;
+    &:hover {
+      border: 1px solid var(--secondary-color);
+      transform: scale(1.1);
+      background: url(../../assets/icons/icon-galadriel-hover.svg) no-repeat center;
+    }
+  }
+}
