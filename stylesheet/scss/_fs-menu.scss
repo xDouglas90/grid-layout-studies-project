@@ -1,0 +1,50 @@
+.fs-menu__container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100vw;
+  .fs-menu__item {
+    flex-grow: 1;
+    background-position: center;
+    background-size: cover;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    position: relative;
+    transition: all ease-in-out 0.7s;
+    &:hover {
+      flex-grow: 10;
+      -webkit-filter: grayscale(0%);
+      filter: grayscale(0%);
+      .fs-menu__title {
+        font-size: 2rem;
+        text-shadow: 2px 2px 12px black;
+      }
+    }
+  }
+  .first {
+    background-image: url(../../assets/img/fs-menu/frodo-imagem-menu-fullscreen.jpg);
+  }
+  .second {
+    background-image: url(../../assets/img/fs-menu/gandalf-imagem-menu-fullscreen.jpg);
+  }
+  .third {
+    background-image: url(../../assets/img/fs-menu/legolas-imagem-menu-fullscreen.jpg);
+  }
+  .fourth {
+    background-image: url(../../assets/img/fs-menu/galadriel-imagem-menu-fullscreen.jpg);
+  }
+  .fs-menu__title {
+    color: var(--primary-color) !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: SeratUltra;
+    font-size: 0;
+    font-weight: bold;
+    height: 100%;
+    position: absolute;
+    text-transform: uppercase;
+    transition: all ease-in-out 0.5s;
+    width: 100%;
+  }
+}
