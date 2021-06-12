@@ -1,0 +1,118 @@
+/* Custom fonts */
+@font-face {
+  font-family: MiddleEarth;
+  src: url(../assets/fonts/MiddleEarth.ttf);
+}
+@font-face {
+  font-family: SeratUltra;
+  src: url(../assets/fonts/SeratUltra.ttf);
+}
+:root {
+  --primary-color: rgb(197, 168, 0);
+  --secondary-color: rgb(241, 207, 14);
+  --third-color: rgb(255, 230, 86);
+  --background-color: #fafbfc;
+  --linear-color: linear-gradient(135deg, var(--primary-color), var(--secondary-color), var(--third-color));
+}
+
+/* Reset CSS */
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+a,
+cite,
+em,
+img,
+q,
+strong,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+article,
+aside,
+figure,
+figcaption,
+footer,
+header,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:link {
+  color: unset;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Global grid */
+.grid-structure {
+  display: grid;
+  grid-template-columns: 11rem 3fr 16.1rem;
+  grid-template-areas: "header header header" "aside content ads" "aside content ads" "footer footer footer";
+}
