@@ -13,7 +13,7 @@
   }
 
   .header,
-.content {
+  .content {
     grid-template-columns: auto;
   }
 
@@ -22,7 +22,7 @@
   }
 
   .aside,
-.ads {
+  .ads {
     overflow-x: auto;
     padding: 0;
     position: relative;
@@ -30,7 +30,7 @@
   }
 
   .aside-menu,
-.ads {
+  .ads {
     display: flex;
   }
 
@@ -39,9 +39,9 @@
   }
 
   .aside::after,
-.ads::after {
+  .ads::after {
     animation: hand-scrolling 3s ease-in-out infinite alternate;
-    content: url(../assets/icons/scroll.png);
+    content: url(../../assets/icons/scroll.png);
     position: absolute;
     opacity: 0.4;
     top: 5px;
